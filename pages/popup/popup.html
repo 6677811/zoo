@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online-zoo</title>
+    <link rel="stylesheet" href="../../assets/styles/normalize.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<main>
+    <section class="donate">
+        <article class="donate__left"></article>
+        <article class="donate__right">
+            <h2 class="donate__title">Donate for your animal </h2>
+            <form action="submit" class="donate__form">
+                <section class="donate__form__animal">
+                    <fieldset class="form__animal__choose">
+                        <legend>Сhoose an animal</legend>
+                        <select class="donate__form__select">
+                            <option value="panda">Panda</option>
+                            <option value="eagle">Eagle</option>
+                            <option value="crocodile">Crocodile</option>
+                            <option value="gorilla">Gorilla</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="form__animal__to-donate">
+                        <legend>To donate</legend>
+                        <input type="text" class="form__animal__to-donate__input">
+                    </fieldset>
+                </section>
+                <section class="donate__form__about-you">
+                    <h2 class="about-you__title">About you</h2>
+                    <fieldset class="form__about-you__name">
+                        <legend>Name</legend>
+                        <input type="text" class="form__about-you__name__input">
+                    </fieldset>
+                    <fieldset class="form__about-you__email">
+                        <legend>Email</legend>
+                        <input type="email" class="form__about-you__email__input">
+                    </fieldset>
+                    <fieldset class="form__about-you__phone">
+                        <legend>Phone</legend>
+                        <select class="form__about-you__phone__select">
+                            <option value="russia">+7</option>
+                            <option value="usa">+1</option>
+                            <option value="britan">+44</option>
+                        </select>
+                        <input type="tel" class="form__about-you__phone__input">
+                    </fieldset>
+                </section>
+                <section class="donate__form__checkout">
+                    <h2 class="checkout__title">Checkout</h2>
+                    <fieldset class="form__checkout__card-number">
+                        <legend>Card Number</legend>
+                        <input type="text" class="form__checkout__card-number__input">
+                    </fieldset>
+                    <fieldset class="form__checkout__expiry-date">
+                        <legend>Expiry Date</legend>
+                        <select class="form__checkout__expiry-date__month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select class="form__checkout__expiry-date__year">
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="form__checkout__cvc">
+                        <legend>CVC</legend>
+                        <input type="tel" class="form__checkout__cvc__input">
+                    </fieldset>
+                </section>
+            </form>
+            <p class="donate__subscription">
+                If don’t cancel your subscription before the trial ends on April 15, 2021,
+                you agree that you will automatically be charged</p>
+            <button class="main-button donate__main-button">
+                donate
+            </button>
+        </article>
+    </section>
+</main>
+</body>
+</html>

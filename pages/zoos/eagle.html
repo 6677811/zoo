@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eagle</title>
+    <link rel="stylesheet" href="../../assets/styles/normalize.css">
+    <link rel="stylesheet" href="zoos.css">
+    <script src="zoos.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="header__logo">
+        <a href="../about/about.html" class="none-decoration">
+            <div class="logo__zoo">zoo</div>
+            <div class="logo__online">online</div>
+        </a>
+    </div>
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li class="header__list-item"><a href="../about/about.html">About</a></li>
+            <li class="header__list-item header__list-item--active"><a href="./zoos.html">Zoos</a></li>
+            <li class="header__list-item"><a href="../map/map.html">Map</a></li>
+            <li class="header__list-item"><a href="#contact">Contact Us</a></li>
+            <li class="header__list-item"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header__toggle-theme">
+        <label class="toggle-theme__switch">
+            <input type="checkbox">
+            <span class="toggle-theme__slider round"></span>
+        </label>
+    </div>
+</header>
+<main>
+    <section class="zoo">
+        <article class="zoo__side-menu">
+            <div class="zoo__slide-menu__top-arrow top-arrow"></div>
+            <a href="./zoos.html">
+                <div class="slide-menu slide-menu__panda" title="Panda">
+                    <img src="../../assets/images/panda-side-menu.png" alt="panda">
+                </div>
+            </a>
+            <a href="./eagle.html">
+                <div class="slide-menu slide-menu__eagle slide-active" title="Eagle">
+                    <img src="../../assets/images/eagle-side-menu.png" alt="eagle">
+                </div>
+            </a>
+
+            <a href="./crocodile.html">
+                <div class="slide-menu slide-menu__crocodile" title="Crocodile">
+                    <img src="../../assets/images/crocodile-side-menu.png" alt="crocodile">
+                </div>
+            </a>
+            <a href="./gorilla.html">
+                <div class="slide-menu slide-menu__gorilla" title="Gorilla">
+                    <img src="../../assets/images/gorilla-side-menu.png" alt="gorilla">
+                </div>
+            </a>
+            <div class="zoo__slide-menu__bottom-arrow bottom-arrow"></div>
+        </article>
+        <article class="zoo__live">
+            <h1 class="zoo__live__title">West End Bald Eagle Cam</h1>
+            <section class="zoo__live__camera">
+                <div class="camera__stub"></div>
+                <iframe width="790"
+                        height="442"
+                        src="https://www.youtube.com/embed/RmmAzrAkKqI?&autoplay=1&mute=1"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+            </section>
+            <section class="zoo__live__videos">
+                <div class="zoo__live__videos__second">
+                    <div class="camera__stub-min"></div>
+                    <iframe width="246"
+                            height="141"
+                            src="https://www.youtube.com/embed/RmmAzrAkKqI"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="zoo__live__videos__third">
+                    <div class="camera__stub-min"></div>
+                    <iframe width="246"
+                    height="141"
+                    src="https://www.youtube.com/embed/RmmAzrAkKqI"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="zoo__live__videos__fourth">
+                    <div class="camera__stub-min"></div>
+                    <iframe width="246"
+                    height="141"
+                    src="https://www.youtube.com/embed/RmmAzrAkKqI"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="zoo__live__slider">
+                <div class="zoo__live__slider__marker--active"></div>
+                <div class="zoo__live__slider__marker"></div>
+                <div class="zoo__live__slider__marker"></div>
+            </section>
+        </article>
+        <article class="zoo__description">
+            <div class="description__population">Population:</div>
+            <div class="description__population__text">More than 270 pairs in 2013</div>
+            <div class="description__habitat">Habitat:</div>
+            <div class="description__habitat__text">Typically nest in forested areas adjacent to large bodies of water</div>
+            <div class="description__diet">Diet:</div>
+            <div class="description__diet__text">Main live prey consists of medium sized mammals and birds such as
+                rabbits, hares, grouse and ptarmigan. The diet of coastal birds includes gulls and other seabirds.
+            </div>
+            <button class="main-button description__main-button">
+                feed
+            </button>
+        </article>
+    </section>
+    <footer class="footer">
+        <section class="footer__left">
+            <div class="header__logo">
+                <a href="./about.html" class="none-decoration">
+                    <div class="logo__zoo">zoo</div>
+                    <div class="logo__online">online</div>
+                </a>
+            </div>
+            <article class="footer__contact">
+                <a name="contact"></a>
+                <h3 class="footer__contact__title">Contact us</h3>
+                <form class="footer__contact__form" action="submit">
+                    <input class="footer__contact__form__name"
+                           type="text"
+                           placeholder="Name"
+                           required>
+                    <input class="footer__contact__form__email"
+                           type="email"
+                           placeholder="Email"
+                           required>
+                    <fieldset class="form__message">
+                        <legend class="form__message__legend">Please enter your message</legend>
+                        <textarea class="footer__contact__form__message"
+                                  id="form-message"
+                                  required
+                                  maxlength="280"></textarea>
+                    </fieldset>
+                    <div class="footer__contact__form__agree">
+                        <input type="checkbox"
+                               class="contact__form__custom"
+                               id="agree-personal-data"
+                               required>
+                        <label for="agree-personal-data">I agree to the processing of Personal Data</label>
+                    </div>
+                    <input class="footer__contact__form__submit" type="submit">
+                </form>
+            </article>
+        </section>
+        <section class="footer__right">
+            <article class="footer__links">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item"><a href="../about/about.html">About</a></li>
+                        <li class="header__list-item"><a href="./zoos.html">Zoos</a></li>
+                        <li class="header__list-item"><a href="../map/map.html">Map</a></li>
+                        <li class="header__list-item"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
+                    </ul>
+                </nav>
+                <button class="main-button footer__main-button center">
+                    donate for volunteers
+                </button>
+            </article>
+            <article class="footer__location">
+                <h4 class="footer__location__title">ZOO Online Centre</h4>
+                <address class="footer__location__street">
+                    <p>132, Address District, Street</p>
+                    <p>Open Daily 10:00 am - 5:00 pm</p>
+                </address>
+                <div class="footer__location__phone">
+                    <p>T<a class="footer__location__link" href="tel:(702)1633433">(702) 163-3433</a></p>
+                    <p><a class="footer__location__link" href="mailto:zoo.online@gmail.com">zoo.online@gmail.com</a></p>
+                </div>
+            </article>
+            <article class="footer__social">
+                <a href="https://www.instagram.com/">
+                    <div class="social__instagram"></div>
+                </a>
+                <a href="https://twitter.com/">
+                    <div class="social__twitter"></div>
+                </a>
+                <a href="https://vk.com/">
+                    <div class="social__vk"></div>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <div class="social__youtube"></div>
+                </a>
+            </article>
+        </section>
+        <section class="footer__copyright">
+            <p class="footer__copyright__author" title="Online Zoo">©Noora Sagnayeva</p>
+            <p class="footer__copyright__school">
+                <span title="Rolling Scopes School">©RSSchool</span>
+                and <span title="Yem Digital">©Yem Digital</span> - 2021</p>
+        </section>
+    </footer>
+    <h1 class="invisible-header">Online Zoo</h1>
+</main>
+</body>
+</html>

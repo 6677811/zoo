@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online-zoo</title>
+    <link rel="stylesheet" href="../../assets/styles/normalize.css">
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__logo">
+        <a href="../about/about.html" class="none-decoration">
+            <div class="logo__zoo">zoo</div>
+            <div class="logo__online">online</div>
+        </a>
+    </div>
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li class="header__list-item"><a href="../about/about.html">About</a></li>
+            <li class="header__list-item"><a href="../zoos/zoos.html">Zoos</a></li>
+            <li class="header__list-item header__list-item--active"><a href="./map.html">Map</a></li>
+            <li class="header__list-item"><a href="#contact">Contact Us</a></li>
+            <li class="header__list-item"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header__toggle-theme">
+        <label class="toggle-theme__switch">
+            <input type="checkbox">
+            <span class="toggle-theme__slider round"></span>
+        </label>
+    </div>
+</header>
+<main>
+    <section class="map">
+        <article class="map__header">
+            <h1 class="map__header__title">
+                Choose your favorite
+            </h1>
+            <div class="map__header__description">
+                As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires
+                on precious species and their habitat, and we are determined to assist in all aspects,
+                including providing veterinary support and raising much-needed emergency funds.
+                Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives.
+                Animals have the right to a pain-free and happy life. They have equal claim to the resources
+                of this planet, and deserve a life of dignity and compassion.As a voice for wildlife,
+                we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.
+            </div>
+        </article>
+        <article class="map__slide-menu">
+            <div class="map__slide-menu__left-arrow left-arrow"></div>
+            <a href="../zoos/gorilla.html">
+                <div class="slide-menu slide-menu__gorilla" title="gorilla">
+                <img src="../../assets/images/gorilla-side-menu.png" alt="gorilla">
+            </div>
+            </a>
+            <a href="../zoos/zoos.html">
+                <div class="slide-menu slide-menu__panda slide-active" title="panda">
+                <img src="../../assets/images/panda-side-menu.png" alt="panda">
+            </div>
+            </a>
+            <a href="../zoos/crocodile.html">
+                <div class="slide-menu slide-menu__crocodile" title="crocodile">
+                <img src="../../assets/images/crocodile-side-menu.png" alt="crocodile">
+            </div>
+            </a>
+            <a href="../zoos/eagle.html">
+                <div class="slide-menu slide-menu__eagle" title="eagle">
+                <img src="../../assets/images/eagle-side-menu.png" alt="eagle">
+            </div>
+            </a>
+            <div class="slide-menu slide-menu__tiger" title="tiger">
+                <img src="../../assets/images/tiger-side-menu.png" alt="tiger">
+            </div>
+            <div class="slide-menu slide-menu__elephant" title="elephant">
+                <img src="../../assets/images/elephant-side-menu.png" alt="elephant">
+            </div>
+            <div class="slide-menu slide-menu__lion" title="lion">
+                <img src="../../assets/images/lion-side-menu.png" alt="lion">
+            </div>
+            <div class="slide-menu slide-menu__zebra" title="zebra">
+                <img src="../../assets/images/zebra-side-menu.png" alt="zebra">
+            </div>
+            <div class="map__slide-menu__right-arrow right-arrow"></div>
+        </article>
+        <div class="pagination map__pagination pointer">
+            <div class="pagination__numbers">
+                <span class="pagination__numbers__current">01/</span>
+                <span class="pagination__numbers__all">08</span>
+            </div>
+            <div class="pagination__slider">
+                <img src="../../assets/icons/slider-block.svg" alt="">
+            </div>
+        </div>
+        <article class="map__image">
+            <div class="map__marker eagle-marker" title="Eagle">
+                <img class="eagle-marker__img"
+                     src="../../assets/images/eagle-marker.png"
+                     alt="eagle habitat">
+            </div>
+            <div class="map__marker crocodile-marker" title="Crocodile">
+                <img class="crocodile-marker__img"
+                     src="../../assets/images/crocodile-marker.png"
+                     alt="crocodile habitat">
+            </div>
+            <div class="map__marker gorilla-marker" title="Gorilla">
+                <img class="gorilla-marker__img"
+                     src="../../assets/images/gorilla-marker.png"
+                     alt="gorilla habitat">
+            </div>
+            <div class="map__marker panda-marker" title="Panda">
+                <img class="panda-marker__img"
+                     src="../../assets/images/panda-marker.png"
+                     alt="panda habitat">
+            </div>
+        </article>
+        <a href="../zoos/zoos.html" class="main-button map__button">
+            <span class="main-button__icon"></span>
+            watch online
+        </a>
+    </section>
+    <footer class="footer">
+        <section class="footer__left">
+            <div class="header__logo">
+                <a href="../about/about.html" class="none-decoration">
+                    <div class="logo__zoo">zoo</div>
+                    <div class="logo__online">online</div>
+                </a>
+            </div>
+            <article class="footer__contact">
+                <a name="contact"></a>
+                <h3 class="footer__contact__title">Contact us</h3>
+                <form class="footer__contact__form" action="submit">
+                    <input class="footer__contact__form__name"
+                           type="text"
+                           placeholder="Name"
+                           required>
+                    <input class="footer__contact__form__email"
+                           type="email"
+                           placeholder="Email"
+                           required>
+                    <fieldset class="form__message">
+                        <legend class="form__message__legend">Please enter your message</legend>
+                        <textarea class="footer__contact__form__message"
+                                  id="form-message"
+                                  required
+                                  maxlength="280"></textarea>
+                    </fieldset>
+                    <div class="footer__contact__form__agree">
+                        <input type="checkbox"
+                               class="contact__form__custom"
+                               id="agree-personal-data"
+                               required>
+                        <label for="agree-personal-data">I agree to the processing of Personal Data</label>
+                    </div>
+                    <input class="footer__contact__form__submit" type="submit">
+                </form>
+            </article>
+        </section>
+        <section class="footer__right">
+            <article class="footer__links">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item"><a href="../about/about.html">About</a></li>
+                        <li class="header__list-item"><a href="../zoos/zoos.html">Zoos</a></li>
+                        <li class="header__list-item"><a href="./map.html">Map</a></li>
+                        <li class="header__list-item"><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp">Design</a></li>
+                    </ul>
+                </nav>
+                <button class="main-button footer__main-button center">
+                    donate for volunteers
+                </button>
+            </article>
+            <article class="footer__location">
+                <h4 class="footer__location__title">ZOO Online Centre</h4>
+                <address class="footer__location__street">
+                    <p>132, Address District, Street</p>
+                    <p>Open Daily 10:00 am - 5:00 pm</p>
+                </address>
+                <div class="footer__location__phone">
+                    <p>T<a class="footer__location__link" href="tel:(702)1633433">(702) 163-3433</a></p>
+                    <p><a class="footer__location__link" href="mailto:zoo.online@gmail.com">zoo.online@gmail.com</a></p>
+                </div>
+            </article>
+            <article class="footer__social">
+                <a href="https://www.instagram.com/">
+                    <div class="social__instagram"></div>
+                </a>
+                <a href="https://twitter.com/">
+                    <div class="social__twitter"></div>
+                </a>
+                <a href="https://vk.com/">
+                    <div class="social__vk"></div>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <div class="social__youtube"></div>
+                </a>
+            </article>
+        </section>
+        <section class="footer__copyright">
+            <p class="footer__copyright__author" title="Online Zoo">©Noora Sagnayeva</p>
+            <p class="footer__copyright__school">
+                <span title="Rolling Scopes School">©RSSchool</span>
+                and <span title="Yem Digital">©Yem Digital</span> - 2021</p>
+        </section>
+    </footer>
+    <h1 class="invisible-header">Online Zoo</h1>
+</main>
+</body>
+</html>

@@ -1,0 +1,250 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto;
+}
+
+main {
+    width: 1200px;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.19);
+}
+
+button,
+a,
+.pointer {
+    cursor: pointer;
+}
+
+.donate {
+    height: 716px;
+    width: 100%;
+    display: flex;
+}
+
+.donate__left {
+    background-image: url("../../assets/images/donate-layout.png");
+    background-size: 197px 795px;
+    background-position-y: -80px;
+    background-repeat: no-repeat;
+    height: 795px;
+    min-width: 197px;
+    flex: 0 1 197px;
+}
+
+.donate__right {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 calc(100% - 197px);
+}
+
+.donate__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 116.5%;
+    text-transform: uppercase;
+    color: #313131;
+}
+
+.donate__form {
+    max-width: 725px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.donate__form__animal {
+    display: flex;
+    width: 725px;
+    height: 65px;
+    justify-content: space-between;
+    flex: 0 1 100%;
+}
+
+.donate__form__about-you,
+.donate__form__checkout {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+    margin-top: 25px;
+}
+
+.donate__form__checkout {
+    align-items: flex-end;
+}
+
+.form__animal__choose,
+.form__animal__to-donate,
+.form__about-you__name,
+.form__about-you__email,
+.form__about-you__phone,
+.form__checkout__card-number,
+.form__checkout__expiry-date,
+.form__checkout__cvc {
+    width: 335px;
+    height: 65px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    padding-top: 2px;
+}
+
+.form__about-you__email,
+.form__checkout__expiry-date {
+    margin-top: 18px;
+}
+
+.form__about-you__phone,
+.form__checkout__cvc {
+    margin-top: 21px;
+}
+
+.form__checkout__card-number,
+.form__about-you__name {
+    margin-top: 8px;
+}
+
+.donate__form__select,
+.form__animal__to-donate__input,
+.form__about-you__name__input,
+.form__about-you__email__input,
+.form__about-you__phone__input,
+.form__checkout__card-number__input,
+.form__checkout__cvc__input,
+.form__about-you__phone__select,
+.form__checkout__expiry-date__month,
+.form__checkout__expiry-date__year {
+    width: 307px;
+    height: 39px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.form__about-you__phone__select {
+    width: 62px;
+    border-right: 1px #000000 solid;
+    height: 33px;
+}
+
+.form__about-you__phone__input {
+    width: 245px;
+}
+
+.form__checkout__expiry-date__month,
+.form__checkout__expiry-date__year {
+    width: 150px;
+}
+
+.form__checkout__expiry-date__month {
+    border-right: 1px #000000 solid;
+    height: 33px;
+}
+
+.donate__form__select:focus,
+.form__animal__to-donate__input:focus,
+.form__about-you__name__input:focus,
+.form__about-you__email__input:focus,
+.form__about-you__phone__input:focus,
+.form__checkout__card-number__input:focus,
+.form__checkout__cvc__input:focus {
+    outline: none;
+}
+
+.checkout__title {
+    align-self: flex-start;
+    margin-left: 25px;
+}
+
+.checkout__title,
+.about-you__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 116.5%;
+    color: #828282;
+}
+
+.form__about-you__phone {
+    display: flex;
+}
+
+.main-button {
+    background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+    border-radius: 3px;
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 245px;
+    height: 55px;
+
+    transition: all 0.5s;
+}
+
+.main-button:hover {
+    transform: scale(0.96);
+}
+
+.main-button__icon {
+    width: 32px;
+    height: 32px;
+    padding: 11px;
+    margin-right: 5px;
+
+    border: 1px #FFFFFF solid;
+    border-radius: 50%;
+
+    box-sizing: border-box;
+
+    background-image: url("../../assets/icons/white-triangle.svg");
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.donate__subscription {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 116.5%;
+    text-align: center;
+    color: #828282;
+    width: 478px;
+    margin-top: 40px;
+}
+
+.donate__main-button {
+    margin-top: 26px;
+}
+
+legend {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.center {
+    margin: auto;
+}
